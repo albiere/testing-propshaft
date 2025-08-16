@@ -1,0 +1,10 @@
+<%= form_with model: @user do |f| %>
+  <div>
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div>
+    <%= f.submit "Create User" %>
+  </div>
+<% end %>
